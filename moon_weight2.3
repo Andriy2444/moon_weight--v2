@@ -1,0 +1,14 @@
+import sys
+
+def moon_weight():
+    print('Press masa:')
+    m = float(sys.stdin.readline())
+    print('Press gravity:')
+    gra =float(sys.stdin.readline())
+    print('Press years:')
+    years = int(sys.stdin.readline())
+    for year in range(0, years + 1):
+        m1 = m * gra
+        print('Year %s, masa %s' % (year, round(m1, 2)))
+        m = m + 1
+moon_weight()
