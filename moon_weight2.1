@@ -1,0 +1,7 @@
+def moon_weight(m, gra):
+    for year in range(0, 16):
+
+        m1 = m * gra
+        print('Year %s, masa %s' % (year, round(m1, 2)))
+        m = m + 1
+moon_weight(30, 0.25)
